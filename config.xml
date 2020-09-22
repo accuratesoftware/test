@@ -4,9 +4,7 @@
     <description>
         Your web site as a native mobile application
     </description>
-    <author email="author@ludei.com" href="https://ludei.com/" />
     Your name here
-    <preference name="phonegap-version" value="cli-7.1.0" />
     <allow-navigation href="http://*/*"/>
     <allow-navigation href="https://*/*"/>
     <allow-navigation href="https://*"/>
@@ -35,12 +33,12 @@
             <application android:largeHeap="true" />
         </edit-config>
         <plugin name="cordova-plugin-sunmi-inner-printer" spec="*"/>
-        <plugin name="cordova-plugin-sunmi-inner-printer" spec="https://github.com/JoseGE/cordova-plugin-sunmi-inner-printer.git"/>
+        <plugin name="cordova-plugin-sunmi-inner-printer" spec="*"/>
     </platform>
 
     <preference name="AndroidLaunchMode" value="singleTask" />
     <preference name="Orientation" value="portrait"/>
-    <preference name="android-targetSdkVersion" value="27"/>
+    <preference name="android-targetSdkVersion" value="28"/>
     <preference name="android-versionCode" value="10037"/>
     <plugin name="cordova-plugin-android-permissions" spec="*"/>
     <plugin name="com.phonegap.plugins.fileopener" spec="*"/>
