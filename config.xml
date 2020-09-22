@@ -1,0 +1,49 @@
+<widget id="com.orderz.systems" version="1.0.37" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/resources/ios/android">
+
+    <name>Orderz</name>
+    <description>
+        Your web site as a native mobile application
+    </description>
+    <author email="author@ludei.com" href="https://ludei.com/" />
+    Your name here
+    <preference name="phonegap-version" value="cli-7.1.0" />
+    <allow-navigation href="http://*/*"/>
+    <allow-navigation href="https://*/*"/>
+    <allow-navigation href="https://*"/>
+    <allow-navigation href="http://*"/>
+    <access origin="*"/>
+    <allow-intent href="http://*/*"/>
+    <allow-intent href="https://*/*"/>
+    <allow-intent href="tel:*"/>
+    <allow-intent href="sms:*"/>
+    <allow-intent href="mailto:*"/>
+    <allow-intent href="geo:*"/>
+    <config-file platform="android" parent="/manifest/application" mode="merge">
+        <activity android:launchMode="singleTask" />
+    </config-file>
+    <platform name="android">
+        <icon src="resources/android/icon.png" />
+        <preference name="enabled" value="true"/>
+        <plugin name="cordova-plugin-media-capture" spec="*"/>
+        <plugin name="cordova-plugin-media" spec="*"/>
+        <plugin name="cordova-plugin-device" spec="*"/>
+        <plugin name="cordova-plugin-inappbrowser" spec="*"/>
+        <plugin name="cordova-plugin-whitelist" spec="*"/>
+        <plugin name="cordova-plugin-browsertab"/>
+        <preference name="android-minSdkVersion" value="19" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:largeHeap="true" />
+        </edit-config>
+        <plugin name="cordova-plugin-sunmi-inner-printer" spec="*"/>
+        <plugin name="cordova-plugin-sunmi-inner-printer" spec="https://github.com/JoseGE/cordova-plugin-sunmi-inner-printer.git"/>
+    </platform>
+
+    <preference name="AndroidLaunchMode" value="singleTask" />
+    <preference name="Orientation" value="portrait"/>
+    <preference name="android-targetSdkVersion" value="27"/>
+    <preference name="android-versionCode" value="10037"/>
+    <plugin name="cordova-plugin-android-permissions" spec="*"/>
+    <plugin name="com.phonegap.plugins.fileopener" spec="*"/>
+    <plugin name="cordova-plugin-vha-fileopener2" spec="*"/>
+    <plugin name="cordova-plugin-nativestorage" spec="*"/>
+</widget>

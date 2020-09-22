@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <style>
+        ul{list-style-type:none;padding: 0;margin: auto;width: 100%;position: absolute;height: 50%;left: 0;top: 0;border-bottom: 1px solid;}
+        textarea{overflow-y: scroll;position: absolute;top: calc(50% - 0px);left:0;width: calc(100% - 6px);height: calc(50% - 5px);resize: none;}
+        li{width: calc(50% - 22px);display: inline-block;text-align: center;margin: 10px;height: 50px;position: relative;}
+        button{width: 100%;height: 100%;}
+        body {margin: auto;overflow:hidden;width: 100vw;height: 100vh;}
+    </style>
+    <script>
+        function printTest(num){
+            switch(num){
+                case 1:
+                    window.sunmiInnerPrinter.printOriginalText(document.getElementById('text').value);
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <li><button onclick="printTest(1);">TEST 1</button></li>
+    </ul>
+    <textarea id="text"></textarea>
+</body>
+</html>
